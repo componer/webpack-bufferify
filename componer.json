@@ -1,0 +1,30 @@
+{
+	"name": "webpack-bufferify",
+	"version": "0.0.2",
+	"type": "npm",
+	"build": [
+		{
+			"from": "src/webpack-bufferify.js",
+			"to": "dist/webpack-bufferify.js",
+			"options": {
+				"minify": false,
+				"sourcemap": false,
+				"vendors": false
+			},
+			"settings": {
+                "output": {
+					"libraryTarget": "commonjs2"
+				},
+				"target": "node",
+				"node": {
+					"global": false,
+					"Buffer": false
+				}
+            }
+		}
+	],
+	"test": {
+		"entry": "test/webpack-bufferify.js",
+		"browsers": "Terminal"
+	}
+}

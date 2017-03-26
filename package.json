@@ -1,0 +1,22 @@
+{
+  "name": "webpack-bufferify",
+  "version": "0.0.2",
+  "description": "webpack bufferify plugin basic class",
+  "main": "dist/webpack-bufferify.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "componer",
+  "dependencies": {
+      "webpack": "*"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/componer/webpack-bufferify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/componer/webpack-bufferify/issues"
+  },
+  "homepage": "https://github.com/componer/webpack-bufferify#readme",
+  "license": "ISC"
+}
