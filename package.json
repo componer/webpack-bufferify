@@ -1,6 +1,6 @@
 {
   "name": "webpack-bufferify",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "webpack bufferify plugin basic class",
   "main": "dist/webpack-bufferify.js",
   "scripts": {},
