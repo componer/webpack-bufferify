@@ -1,4 +1,4 @@
-import RawSource from 'webpack/lib/RawSource'
+import RawSource from 'webpack-sources/lib/RawSource'
 
 export default class {
     constructor() {}

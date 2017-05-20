@@ -1,13 +1,13 @@
 {
   "name": "webpack-bufferify",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "webpack bufferify plugin basic class",
   "main": "dist/webpack-bufferify.js",
   "scripts": {},
   "keywords": [],
   "author": "componer",
   "dependencies": {
-      "webpack": "*"
+    "webpack-sources": "*"
   },
   "devDependencies": {},
   "repository": {
