@@ -4,19 +4,16 @@ export default class {
     constructor() {}
     apply(compiler) {
         compiler.plugin('emit', (compilation, callback) => {
-            let file = compilation.options.output.filename
             let assets = compilation.assets
-            let asset = assets[file]
-            if(!asset) {
-                callback()
-                return
+            for (let key in assets) {
+                if (assets.hasOwnProperty(key)) {
+                    let asset = assets[key]
+                    let content = asset.source()
+                    // begin to modify content
+                    content = this.process(content, asset, assets, compilation, compiler) || content
+                    assets[key] = new RawSource(content)
+                }
             }
-            let content = asset.source()
-
-            // begin to modify content
-            content = this.process(content, file, assets, compilation, compiler) || content
-
-            assets[file] = new RawSource(content)
             callback()
         })
     }
